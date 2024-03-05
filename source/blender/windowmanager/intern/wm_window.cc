@@ -526,7 +526,7 @@ void wm_window_title(wmWindowManager *wm, wmWindow *win)
   str += " - Blender ";
   str += BKE_blender_version_string_compact();
 
-  GHOST_SetTitle(handle, str.c_str());
+  GHOST_SetTitle(handle, "");
 
   /* Informs GHOST of unsaved changes to set the window modified visual indicator (macOS)
    * and to give a hint of unsaved changes for a user warning mechanism in case of OS application
@@ -1082,7 +1082,7 @@ wmWindow *WM_window_open(bContext *C,
 
   if (win->ghostwin) {
     wm_window_raise(win);
-    GHOST_SetTitle(static_cast<GHOST_WindowHandle>(win->ghostwin), title);
+    GHOST_SetTitle(static_cast<GHOST_WindowHandle>(win->ghostwin), "");
     return win;
   }
 

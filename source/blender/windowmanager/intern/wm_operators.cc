@@ -4063,8 +4063,6 @@ void wm_operatortypes_register()
   WM_operatortype_append(WM_OT_memory_statistics);
   WM_operatortype_append(WM_OT_debug_menu);
   WM_operatortype_append(WM_OT_operator_defaults);
-  WM_operatortype_append(WM_OT_splash);
-  WM_operatortype_append(WM_OT_splash_about);
   WM_operatortype_append(WM_OT_search_menu);
   WM_operatortype_append(WM_OT_search_operator);
   WM_operatortype_append(WM_OT_search_single_menu);

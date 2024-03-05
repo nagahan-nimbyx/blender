@@ -2710,8 +2710,8 @@ class IMAGE_PT_tools_active(ToolSelectPanelHelper, Panel):
     _tools_transform = (
         _defs_image_uv_transform.translate,
         _defs_image_uv_transform.rotate,
-        _defs_image_uv_transform.scale,
-        _defs_image_uv_transform.transform,
+        None,
+        None,
     )
 
     _tools_select = (
@@ -2725,10 +2725,10 @@ class IMAGE_PT_tools_active(ToolSelectPanelHelper, Panel):
 
     _tools_annotate = (
         (
-            _defs_annotate.scribble,
-            _defs_annotate.line,
-            _defs_annotate.poly,
-            _defs_annotate.eraser,
+            None,
+            None,
+            None,
+            None,
         ),
     )
 
@@ -2867,10 +2867,10 @@ class VIEW3D_PT_tools_active(ToolSelectPanelHelper, Panel):
         _defs_transform.translate,
         _defs_transform.rotate,
         (
-            _defs_transform.scale,
-            _defs_transform.scale_cage,
+            None,
+            None,
         ),
-        _defs_transform.transform,
+        None,
     )
 
     _tools_select = (
@@ -2884,10 +2884,10 @@ class VIEW3D_PT_tools_active(ToolSelectPanelHelper, Panel):
 
     _tools_annotate = (
         (
-            _defs_annotate.scribble,
-            _defs_annotate.line,
-            _defs_annotate.poly,
-            _defs_annotate.eraser,
+            None,
+            None,
+            None,
+            None,
         ),
     )
 
@@ -2901,7 +2901,7 @@ class VIEW3D_PT_tools_active(ToolSelectPanelHelper, Panel):
     )
 
     _tools_view3d_add = (
-        _defs_view3d_add.cube_add,
+        None,
         _defs_view3d_add.cone_add,
         _defs_view3d_add.cylinder_add,
         _defs_view3d_add.uv_sphere_add,
